@@ -1,0 +1,69 @@
+﻿S/N,CATEGORY,QUESTION,ANSWER
+1,PLUTO,Who can use this app?,"Businesses, employers, financial institutions, and service providers looking to verify the identities and backgrounds of individuals (e.g., customers, employees, tenats, etc.)."
+2,PLUTO,How are the reports downloaded,The reports can be downloaded by clicking on the three dots on the right hand side of the screen.
+3,PLUTO,Does roles get archived automatically,"No, you will have to archive the report manually from your account."
+4,PLUTO,What types of ID can be verified?,We currently support verification for National Identification Numbers (NIN) and Driver’s Licenses.
+5,PLUTO,How long does ID verification take?,ID verification is typically completed in real-time.
+6,PLUTO,What should I do if the ID verification fails?,"Ensure the ID details are accurate and match the name on the ID card.
+If there's a name mismatch, the verification will fail and must be re-initiated."
+7,PLUTO,How is the address verified?,"We use a combination of digital methods, field agents, and geolocation tools to validate the address."
+8,PLUTO,How long does address verification take,"Typically, it is completed within 24 to 72 hours, depending on the location and verification method used."
+9,PLUTO,What information is required for employment verification?,"We require the previous employer’s name (company), location, point of contact details (role), and the individual’s role and duration of employment."
+10,PLUTO,What information is required for a guarantor?,"You’ll need to provide the guarantor’s name, contact information."
+11,PLUTO,How do I re-initiate a cancelled verification?,Navigate to the relevant report and click on “Add New Verification” to submit a fresh request with the correct details.
+12,PLUTO,How can I contact support?,You can reach out to our support team directly via support@verifyme.ng.
+13,PLUTO,How do I top up my wallet,"How to Top Up Your Wallet
+
+Navigate to the menu on the left side of the screen.
+
+Click on ""Wallet"".
+
+Click on ""Fund Wallet"".
+
+On the wallet page, enter the amount you wish to fund.
+
+Click ""Continue to Payment"" to view available payment options.
+
+Alternative: Generate a Purchase Order(Invoice)
+
+Instead of clicking ""Continue to Payment"", click ""Generate Purchase Order"".
+
+Enter the recipient’s email.
+
+Add a brief description.
+
+Click ""Generate"" to send the purchase order.
+"
+14,PLUTO,Can I download the report,"How to Download a Report
+
+Click on ""Active Roles"".
+Use the search bar to find the specific role.
+Click on the role to view its details.
+Locate the applicant whose report you want to download.
+Click on the report (note: only completed reports can be downloaded).
+
+Click on the three dots at the top right of the screen.
+
+Select ""Export"" to download the report."
+15,PLUTO,Can I add multiple users to the pluto account,"Navigate to the menu on the left side of the screen.
+
+Click on ""Settings"".
+Select ""User Management"".
+Click on ""Invite New User"".
+Enter the user’s email address.
+Click ""Add"" to send the invitation.
+"
+16,PLUTO,Can I report an employee,"On the left-hand side of the screen, click ""Submit a Report"".
+Fill out the report form, providing details about the applicant’s behaviour — either commendable or concerning.
+Click ""Submit"" to complete the process.
+The Report Feature allows you to commend applicants for positive conduct or report them for any inappropriate or unprofessional behaviour during the verification process."
+17,PLUTO,Can I view past verifications,"Click on ""Active Roles"" on the left-hand menu.
+Use the search bar to find the specific role you're looking for.
+You can also browse or search directly within the Archived Roles section.
+"
+18,PLUTO,Can I track the applicants verification in real time,"Yes you can yoou can always see the state of the verification , you can see if the applicant has begun the verification and if the verification is in progress"
+19,PLUTO,"What is the difference between the basic, standard and premium plans","The Basic Plan enables ID verification using either an NIN or a Driver’s License, combined with a biometric test to confirm the individual’s identity.
+The Standard Plan includes all features of the Basic Plan and adds physical address verification.
+The Premium Plan includes everything in the Standard Plan and adds both guarantor and employment verifications. You can choose how many guarantors or employment checks you need, making it flexible to match your specific requirements.
+"
+20,PLUTO,Is there a limit on the number of applicants  I can verify for a role,"No, there is no limit"
