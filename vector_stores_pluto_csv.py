@@ -1,14 +1,18 @@
 from langchain_core.documents import Document
-from langchain_chroma import Chroma
+from langchain_chroma.vectorstores import Chroma
 import pandas as pd
-from langchain_ollama.embeddings import OllamaEmbeddings
+# from langchain_ollama.embeddings import OllamaEmbeddings
+from langchain_openai.embeddings import OpenAIEmbeddings
 import os
-from uuid import uuid4
+from dotenv import load_dotenv
+
+load_dotenv()
+# from uuid import uuid4
 
 file_path =os.path.join("data","Pluto_FAQ.csv")
 df = pd.read_csv(file_path)
 
-embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 db_path = "./chroma_langchain_pluto_csv"
 add_docs = not os.path.exists(db_path)
 
