@@ -9,10 +9,12 @@ from dotenv import load_dotenv
 load_dotenv()
 # from uuid import uuid4
 
+api_key = os.getenv("OPENAI_API_KEY")
+
 file_path =os.path.join("data","Pluto_FAQ.csv")
 df = pd.read_csv(file_path)
 
-embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
+embeddings = OpenAIEmbeddings(model="text-embedding-3-small",dimensions=1024)
 db_path = "./chroma_langchain_pluto_csv"
 add_docs = not os.path.exists(db_path)
 
