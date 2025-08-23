@@ -1,5 +1,5 @@
 from langchain_core.documents import Document
-from langchain_community.vectorstores import Chroma
+from langchain_chroma.vectorstores import Chroma
 import pandas as pd
 # from langchain_ollama.embeddings import OllamaEmbeddings
 from langchain_openai.embeddings import OpenAIEmbeddings

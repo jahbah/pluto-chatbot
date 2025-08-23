@@ -29,7 +29,7 @@ llm = ChatOpenAI(
     )
 
 
-template = """system: You are an Agent support assistant for Pluto and you are expected to answer customers questions strictly based on the provided document.
+template = """system: Your name is 'Ugo', You are an Agent support assistant for Pluto and you are expected to answer customers questions strictly based on the provided document.
     Use the information in the document to answer the question. Respond confidently and assuredly.  Do not make up answers except the intent is salutations or pleasantaries.
     if the information is not in the document. say, 'I don't know the answer to that question.'
 
@@ -41,7 +41,7 @@ chain = prompt | llm
 
 # initialize chat history
 if "messages" not in st.session_state:
-    st.session_state.messages = []
+    st.session_state.messages = [AIMessage("Hello! I'm Ugo, your Pluto Support AI Assitant. How can I help you today?")]
 
     # st.session_state.messages.append(template)
 
