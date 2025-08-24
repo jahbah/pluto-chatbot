@@ -8,6 +8,7 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain.chains.combine_documents import create_stuff_documents_chain
 import os
 from dotenv import load_dotenv
+import time
 
 load_dotenv()
 
@@ -86,6 +87,7 @@ for message in st.session_state.messages:
 # create the bar where we can type messages
 prompt = st.chat_input("Ask your question.")
 
+
 # did the user submit a prompt?
 if prompt:
 
@@ -99,8 +101,14 @@ if prompt:
     with st.spinner("Typing..."):
         result = get_response(prompt)
 
+    placeholder =st.empty()
     with st.chat_message("assistant"):
-        st.markdown(result)
+        # st.markdown(result)
+        
+        # Simulate typing effects
+        for i in range(len(result)):
+            placeholder.markdown(result[:i+1])
+            time.sleep(0.05)
             
         st.session_state.messages.append(AIMessage(result))
 
