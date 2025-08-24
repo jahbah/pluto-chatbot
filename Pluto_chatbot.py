@@ -2,8 +2,10 @@ import streamlit as st
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, AIMessage
 from vector_stores_pluto_csv import retriever
-from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
+from langchain.chains import create_history_aware_retriever, create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chain
 import os
 from dotenv import load_dotenv
 
@@ -22,29 +24,55 @@ st.title("✅Pluto Support Bot")
 
 llm = ChatOpenAI(
         model="gpt-4o-mini",
-        temperature=0.0,
+        temperature=0,
         api_key = api_key,
         verbose=True,
         streaming=True
     )
 
+retriever = retriever
 
-template = """system: Your name is 'Ugo', You are an Agent support assistant for Pluto and you are expected to answer customers questions strictly based on the provided document.
-    Use the information in the document to answer the question. Respond confidently and assuredly.  Do not make up answers except the intent is salutations or pleasantaries.
+def get_context_retriever_chain():
+    # Create a prompt template to retrieve relevant context based on chat-history and user query   
+    prompt = ChatPromptTemplate.from_messages([
+    MessagesPlaceholder(variable_name="messages"),
+    ("user", "{input}"),
+    ("user", "Given the above conversation, generate a search query to look up in order to get information relevant to the conversation")
+    ])
+    # Create a history aware retriever chain
+    retriever_chain = create_history_aware_retriever(llm, retriever, prompt)
+    
+    return retriever_chain
+
+# Create a conversational RAG Chain
+def get_conversational_rag_chain(retriever_chain): 
+    
+    prompt = ChatPromptTemplate.from_messages([
+    ("system","""Your name is 'Ugo', You are an Agent support assistant for Pluto and you are expected to answer customers questions strictly based on the provided document.
+    Use the information in the document to answer the question. Respond confidently and assuredly. Do not make up answers except the intent is salutations or pleasantaries.
     if the information is not in the document. say, 'I don't know the answer to that question.'
+    Use the below context:\n\n{context}"""),
+    MessagesPlaceholder(variable_name="messages"),
+    ("user", "{input}")
+    ])
+    
+    stuff_documents_chain = create_stuff_documents_chain(llm,prompt)
+    
+    return create_retrieval_chain(retriever_chain, stuff_documents_chain)
 
-    document: {context}
-    Question: {prompt}"""
-
-prompt = ChatPromptTemplate.from_template(template=template)
-chain = prompt | llm 
+def get_response(prompt):
+    retriever_chain = get_context_retriever_chain()
+    conversation_rag_chain = get_conversational_rag_chain(retriever_chain)
+    
+    response = conversation_rag_chain.invoke({
+        "messages": st.session_state.messages,
+        "input": prompt
+    })
+    return response['answer']
 
 # initialize chat history
 if "messages" not in st.session_state:
     st.session_state.messages = [AIMessage("Hello! I'm Ugo, your Pluto Support AI Assitant. How can I help you today?")]
-
-    # st.session_state.messages.append(template)
-
 
 # display chat messages from history on app rerun
 for message in st.session_state.messages:
@@ -65,23 +93,14 @@ if prompt:
     with st.chat_message("user"):
         st.markdown(prompt)
         
-
         st.session_state.messages.append(HumanMessage(prompt))
-
-    # create the echo (response) and add it to the screen
-    context = retriever.invoke(prompt)
 
     
     with st.spinner("Typing..."):
-        result = chain.invoke({
-                        "context": context,
-                        "prompt": prompt,
-                        "chat_history":st.session_state.messages
-                    }).content
+        result = get_response(prompt)
 
     with st.chat_message("assistant"):
         st.markdown(result)
             
-
         st.session_state.messages.append(AIMessage(result))
 
