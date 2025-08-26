@@ -98,7 +98,7 @@ if prompt:
         st.session_state.messages.append(HumanMessage(prompt))
 
     
-    with st.spinner("Typing..."):
+    with st.spinner("Processing..."):
         result = get_response(prompt)
 
     placeholder =st.empty()
@@ -108,7 +108,7 @@ if prompt:
         # Simulate typing effects
         for i in range(len(result)):
             placeholder.markdown(result[:i+1])
-            time.sleep(0.05)
+            time.sleep(0.01)
             
         st.session_state.messages.append(AIMessage(result))
 
