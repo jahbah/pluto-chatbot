@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-# from uuid import uuid4
+from uuid import uuid4
 
 api_key = os.getenv("OPENAI_API_KEY")
 
@@ -18,15 +18,16 @@ embeddings = OpenAIEmbeddings(model="text-embedding-3-small",dimensions=1024)
 db_path = "./chroma_langchain_pluto_csv"
 add_docs = not os.path.exists(db_path)
 
+ids = []
 docs =[]
 if add_docs:
     for i, row in df.iterrows():
         document = Document(
-            page_content = str(row['QUESTION'])+" "+str(row['ANSWER'])
-            # metadata = {"Created_by": row["Added_by"] , "Created_at":row["Date_added"]},
-            # id= str(uuid4())
+            page_content = str(row['Question'])+" "+str(row['Answer']),
+            metadata = {"file_name": row["file_name"] , "row_number": row["row_no"], "sub_heading": row["Sub_heading"]},
+            id= str(uuid4())
         )
-        # ids.append(str(id))
+        ids.append(str(id))
         docs.append(document)
 
 vector_store = Chroma(
@@ -39,7 +40,7 @@ if add_docs:
     vector_store.add_documents(documents=docs)
     print(f"finished injesting file: {file_path}")
 
-retriever = vector_store.as_retriever(search_kwargs={'k': 5})
+retriever = vector_store.as_retriever(search_kwargs={'k': 3})
 
 
 

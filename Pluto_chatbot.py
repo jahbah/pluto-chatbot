@@ -1,6 +1,7 @@
 import streamlit as st
 from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage, AIMessage
+from langsmith import traceable
 from vector_stores_pluto_csv import retriever
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_openai import ChatOpenAI
@@ -33,6 +34,7 @@ llm = ChatOpenAI(
 
 retriever = retriever
 
+@traceable
 def get_context_retriever_chain():
     # Create a prompt template to retrieve relevant context based on chat-history and user query   
     prompt = ChatPromptTemplate.from_messages([
@@ -46,6 +48,7 @@ def get_context_retriever_chain():
     return retriever_chain
 
 # Create a conversational RAG Chain
+@traceable
 def get_conversational_rag_chain(retriever_chain): 
     
     prompt = ChatPromptTemplate.from_messages([
@@ -61,6 +64,7 @@ def get_conversational_rag_chain(retriever_chain):
     
     return create_retrieval_chain(retriever_chain, stuff_documents_chain)
 
+@traceable
 def get_response(prompt):
     retriever_chain = get_context_retriever_chain()
     conversation_rag_chain = get_conversational_rag_chain(retriever_chain)

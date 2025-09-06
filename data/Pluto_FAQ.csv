@@ -1,18 +1,18 @@
-﻿S/N,CATEGORY,QUESTION,ANSWER
-1,PLUTO,Who can use this app?,"Businesses, employers, financial institutions, and service providers looking to verify the identities and backgrounds of individuals (e.g., customers, employees, tenats, etc.)."
-2,PLUTO,How are the reports downloaded,The reports can be downloaded by clicking on the three dots on the right hand side of the screen.
-3,PLUTO,Does roles get archived automatically,"No, you will have to archive the report manually from your account."
-4,PLUTO,What types of ID can be verified?,We currently support verification for National Identification Numbers (NIN) and Driver’s Licenses.
-5,PLUTO,How long does ID verification take?,ID verification is typically completed in real-time.
-6,PLUTO,What should I do if the ID verification fails?,"Ensure the ID details are accurate and match the name on the ID card.
-If there's a name mismatch, the verification will fail and must be re-initiated."
-7,PLUTO,How is the address verified?,"We use a combination of digital methods, field agents, and geolocation tools to validate the address."
-8,PLUTO,How long does address verification take,"Typically, it is completed within 24 to 72 hours, depending on the location and verification method used."
-9,PLUTO,What information is required for employment verification?,"We require the previous employer’s name (company), location, point of contact details (role), and the individual’s role and duration of employment."
-10,PLUTO,What information is required for a guarantor?,"You’ll need to provide the guarantor’s name, contact information."
-11,PLUTO,How do I re-initiate a cancelled verification?,Navigate to the relevant report and click on “Add New Verification” to submit a fresh request with the correct details.
-12,PLUTO,How can I contact support?,You can reach out to our support team directly via support@verifyme.ng.
-13,PLUTO,How do I top up my wallet,"How to Top Up Your Wallet
+﻿row_no,Question,Answer,file_name,Sub_heading
+1,Who can use this app?,"Businesses, employers, financial institutions, and service providers looking to verify the identities and backgrounds of individuals (e.g., customers, employees, tenats, etc.).",Pluto_FAQs,
+2,How are the reports downloaded,The reports can be downloaded by clicking on the three dots on the right hand side of the screen.,Pluto_FAQs,
+3,Does roles get archived automatically,"No, you will have to archive the report manually from your account.",Pluto_FAQs,
+4,What types of ID can be verified?,We currently support verification for National Identification Numbers (NIN) and Driver’s Licenses.,Pluto_FAQs,
+5,How long does ID verification take?,ID verification is typically completed in real-time.,Pluto_FAQs,
+6,What should I do if the ID verification fails?,"Ensure the ID details are accurate and match the name on the ID card.
+If there's a name mismatch, the verification will fail and must be re-initiated.",Pluto_FAQs,
+7,How is the address verified?,"We use a combination of digital methods, field agents, and geolocation tools to validate the address.",Pluto_FAQs,
+8,How long does address verification take,"Typically, it is completed within 24 to 72 hours, depending on the location and verification method used.",Pluto_FAQs,
+9,What information is required for employment verification?,"We require the previous employer’s name (company), location, point of contact details (role), and the individual’s role and duration of employment.",Pluto_FAQs,
+10,What information is required for a guarantor?,"You’ll need to provide the guarantor’s name, contact information.",Pluto_FAQs,
+11,How do I re-initiate a cancelled verification?,Navigate to the relevant report and click on “Add New Verification” to submit a fresh request with the correct details.,Pluto_FAQs,
+12,How can I contact support?,You can reach out to our support team directly via support@verifyme.ng.,Pluto_FAQs,
+13,How do I top up my wallet,"How to Top Up Your Wallet
 
 Navigate to the menu on the left side of the screen.
 
@@ -33,8 +33,8 @@ Enter the recipient’s email.
 Add a brief description.
 
 Click ""Generate"" to send the purchase order.
-"
-14,PLUTO,Can I download the report,"How to Download a Report
+",Pluto_FAQs,
+14,Can I download the report,"How to Download a Report
 
 Click on ""Active Roles"".
 Use the search bar to find the specific role.
@@ -44,26 +44,97 @@ Click on the report (note: only completed reports can be downloaded).
 
 Click on the three dots at the top right of the screen.
 
-Select ""Export"" to download the report."
-15,PLUTO,Can I add multiple users to the pluto account,"Navigate to the menu on the left side of the screen.
+Select ""Export"" to download the report.",Pluto_FAQs,
+15,Can I add multiple users to the pluto account,"Navigate to the menu on the left side of the screen.
 
 Click on ""Settings"".
 Select ""User Management"".
 Click on ""Invite New User"".
 Enter the user’s email address.
 Click ""Add"" to send the invitation.
-"
-16,PLUTO,Can I report an employee,"On the left-hand side of the screen, click ""Submit a Report"".
+",Pluto_FAQs,
+16,Can I report an employee,"On the left-hand side of the screen, click ""Submit a Report"".
 Fill out the report form, providing details about the applicant’s behaviour — either commendable or concerning.
 Click ""Submit"" to complete the process.
-The Report Feature allows you to commend applicants for positive conduct or report them for any inappropriate or unprofessional behaviour during the verification process."
-17,PLUTO,Can I view past verifications,"Click on ""Active Roles"" on the left-hand menu.
+The Report Feature allows you to commend applicants for positive conduct or report them for any inappropriate or unprofessional behaviour during the verification process.",Pluto_FAQs,
+17,Can I view past verifications,"Click on ""Active Roles"" on the left-hand menu.
 Use the search bar to find the specific role you're looking for.
 You can also browse or search directly within the Archived Roles section.
-"
-18,PLUTO,Can I track the applicants verification in real time,"Yes you can yoou can always see the state of the verification , you can see if the applicant has begun the verification and if the verification is in progress"
-19,PLUTO,"What is the difference between the basic, standard and premium plans","The Basic Plan enables ID verification using either an NIN or a Driver’s License, combined with a biometric test to confirm the individual’s identity.
+",Pluto_FAQs,
+18,Can I track the applicants verification in real time,"Yes you can yoou can always see the state of the verification , you can see if the applicant has begun the verification and if the verification is in progress",Pluto_FAQs,
+19,"What is the difference between the basic, standard and premium plans","The Basic Plan enables ID verification using either an NIN or a Driver’s License, combined with a biometric test to confirm the individual’s identity.
 The Standard Plan includes all features of the Basic Plan and adds physical address verification.
 The Premium Plan includes everything in the Standard Plan and adds both guarantor and employment verifications. You can choose how many guarantors or employment checks you need, making it flexible to match your specific requirements.
-"
-20,PLUTO,Is there a limit on the number of applicants  I can verify for a role,"No, there is no limit"
+",Pluto_FAQs,
+20,Is there a limit on the number of applicants  I can verify for a role,"No, there is no limit",Pluto_FAQs,
+1,What is Pluto?,"Pluto is a verification and background check platform that helps individuals and organizations verify identities, addresses, guarantors, and employment histories before engaging with candidates, tenants, domestic staff, or customers.",Pluto_FAQs2,General Information
+2,Who can use Pluto?,"Pluto is designed for HR managers, recruiters, landlords, homeowners, entrepreneurs, and businesses that need to validate the background of people they work with.",Pluto_FAQs2,General Information
+3,How is Pluto different from other verification platforms?,"Pluto offers pre-designed verification flows, flexible verification options (remote or in-person), insightful reports, and coverage across multiple role types.",Pluto_FAQs2,General Information
+4,What categories of roles does Pluto support for verification?,"Pluto supports four main role kinds:
+• Domestic staff (e.g., nannies, drivers, cooks, housekeepers)
+• Employees/Contractors (Corporate) (e.g., full-time staff, consultants, contract workers)
+• Customers (e.g., individuals signing up for services or financial products)
+• Tenants (e.g., individuals renting residential or commercial property)",Pluto_FAQs2,Roles & Use Cases
+5,Why are roles important in Pluto?,"Roles help determine the verification flow and data points required. For example, a nanny might require guarantor checks and address verification, while a tenant may need employment and identity verification.",Pluto_FAQs2,Roles & Use Cases
+6,Can Pluto handle multiple roles for one applicant?,"Yes. An applicant can be verified under multiple role types depending on the engagement (e.g., someone could be both a tenant and an employee).",Pluto_FAQs2,Roles & Use Cases
+7,What types of verification services does Pluto provide?,"Pluto offers the following in-portal verification services:
+• Identity Verification – Confirms the authenticity of government-issued IDs.
+• Liveness/Face Match Verification – Ensures the applicant is physically present and matches their ID photo.
+• Address Verification – Validates the residential or business address provided by the applicant.
+• Guarantor Verification – Confirms the identity and reliability of guarantors provided by applicants.
+• Employment History Verification – Confirms past and current employment records.
+
+Additional out-of-portal services include:
+• Criminal Record Check
+• Academic Certificate Verification
+• Credit Check
+• Social Media Screening
+• Professional Certificate Verification
+
+You can reach out to support@verifyme.ng to request these out-of-portal services.",Pluto_FAQs2,Features & Services
+8,What does Identity Verification entail?,"This service checks applicant-provided IDs (e.g., NIN and Driver’s License) against authoritative databases to ensure they are valid and belong to the applicant.",Pluto_FAQs2,Features & Services
+9,What does Liveness/Face Match Verification entail?,"This process uses facial recognition to compare a live selfie or video of the applicant against their ID photo, preventing impersonation and fraud.",Pluto_FAQs2,Features & Services
+10,What does Address Verification entail?,Pluto verifies that the applicant resides or operates at the claimed address through field agents.,Pluto_FAQs2,Features & Services
+11,What does Guarantor Verification entail?,"Guarantor details are checked to confirm their identity, credibility, and willingness to vouch for the applicant, reducing risk for employers and landlords. There are two kinds of Guarantor Verification:
+• Guarantor Basic
+• Guarantor Plus",Pluto_FAQs2,Features & Services
+12,What is Guarantor Plus and how does it work?,"Guarantor Plus extends the guarantor check by not only confirming that the guarantor exists and attests to the applicant, but also verifying their identity and residential address. This provides a higher level of assurance.",Pluto_FAQs2,Features & Services
+13,What does Employment History Verification entail?,"Pluto contacts previous or current employers directly to confirm applicant roles, tenure, and performance, ensuring accurate work history.",Pluto_FAQs2,Features & Services
+14,What reports do I get after verification?,"You receive a comprehensive report that includes verification results, supporting details, and insights. Reports are exportable in PDF format.",Pluto_FAQs2,Features & Services
+15,Does Pluto support remote verification?,"Yes. Candidates can complete verifications digitally using their smartphones, reducing the need for physical presence unless required.",Pluto_FAQs2,Features & Services
+16,How do I start a verification?,"Create an account, choose the role type, input candidate details, and Pluto will guide you step-by-step.",Pluto_FAQs2,Verification Process
+17,How long does a verification take?,"Verification timelines vary by type. Identity and face match checks are near instant, while employment and guarantor verifications may take a few days depending on how quickly the third-party responds.",Pluto_FAQs2,Verification Process
+18,What are add-ons in Pluto?,"Add-ons are optional services that enhance Pluto’s core verification flows. They provide deeper insights, extended coverage, or extra functionality for specific needs.",Pluto_FAQs2,Verification Process
+19,Do add-ons cost extra?,Yes. Add-ons are priced separately from core verification checks. Businesses can choose only the add-ons relevant to them.,Pluto_FAQs2,Verification Process
+20,Can I enable or disable add-ons per verification?,Yes. Add-ons are flexible and can be toggled on or off depending on the verification request or organizational policy.,Pluto_FAQs2,Verification Process
+21,Are add-ons available to all users?,Add-ons are available to all users but are dependent on the role category selected. Some add-ons are available for some role categories while some others are available to other categories.,Pluto_FAQs2,Verification Process
+22,What does a verification report include?,"Reports typically include applicant details, verification results for each service, supporting evidence (e.g., images, documents), and a final status (Pass/Fail).",Pluto_FAQs2,Verification Process
+23,Can I download reports?,"Yes, reports can be downloaded in PDF format for sharing, record-keeping, or compliance purposes.",Pluto_FAQs2,Verification Process
+24,How are the reports downloaded?,Reports can be downloaded directly from the applicants report details by clicking on the more options icon and clicking export report.,Pluto_FAQs2,Verification Process
+25,Does roles get archived automatically?,No. Reports must be archived manually if you want to move them out of the active dashboard.,Pluto_FAQs2,Verification Process
+26,Can applicants see the results of their verification?,"Applicants do not see the results directly. Only the requestor (e.g., employer, landlord) receives the report. Applicants are, however, notified when a verification is in progress and can dispute certain submissions (e.g., employee reporting).",Pluto_FAQs2,Verification Process
+27,How does Pluto ensure data privacy?,"Pluto complies with data protection regulations. Information is encrypted, stored securely, and only shared with authorized users.",Pluto_FAQs2,Privacy & Security
+28,Will applicants know they are being verified?,"Yes. Applicants consent to verification during the onboarding process, ensuring transparency.",Pluto_FAQs2,Privacy & Security
+29,How are applicant reports generated?,Pluto generates applicant reports using verified information obtained from authoritative government and third-party databases.,Pluto_FAQs2,Privacy & Security
+30,How is Pluto priced?,"Pricing depends on the verification services selected. Users only pay for the checks they perform, with no mandatory subscription.",Pluto_FAQs2,Pricing & Access
+31,"What is the difference between the basic, standard and premium plans?","Pricing depends on the verification services selected. Users only pay for the checks they perform, with no mandatory subscription.",Pluto_FAQs2,Pricing & Access
+32,Can I verify multiple applicants at once?,Yes. Pluto supports bulk verification for organizations managing large candidate pools.,Pluto_FAQs2,Pricing & Access
+33,Does Pluto support role-based verification flows?,"Yes. You can select pre-designed flows tailored to specific roles (e.g., domestic staff, tenant, employee).",Pluto_FAQs2,Pricing & Access
+34,How much does a verification cost?,Costs vary depending on the type of verification and number of candidates. Pricing details can be viewed in the app or requested from our sales team.,Pluto_FAQs2,Pricing & Access
+35,Do you offer subscriptions?,Pluto does not use a subscription model. You only pay for the verifications you need.,Pluto_FAQs2,Pricing & Access
+36,What payment methods are supported?,"You can fund your Pluto wallet using bank transfer, debit/credit card, or supported digital payment methods.",Pluto_FAQs2,Pricing & Access
+37,Can organizations use Pluto for large-scale verification?,"Yes. Businesses can onboard multiple team members, manage verifications at scale, and export reports for compliance or record-keeping.",Pluto_FAQs2,Business Use & Integration
+38,Does Pluto offer APIs?,No. Pluto does not currently provide APIs.,Pluto_FAQs2,Business Use & Integration
+39,Can I assign verification tasks to my team?,"Yes. With role-based access control, team members can be assigned specific permissions to initiate, review, or manage verifications.",Pluto_FAQs2,Business Use & Integration
+40,What should I do if a verification fails?,"Pluto provides reason codes (e.g., mismatched details, invalid documents). You can retry, request additional documents, or escalate to support.",Pluto_FAQs2,Troubleshooting & Support
+41,What if an applicant refuses to be verified?,"If an applicant refuses verification, the process cannot proceed. You’ll be notified immediately so you can make an informed decision.",Pluto_FAQs2,Troubleshooting & Support
+42,What is a terminated verification?,A terminated verification occurs when there is an identity mismatch i.e. that identity number exists in the government database but the names provided by the applicant does not match the name for that identity number in the government record.,Pluto_FAQs2,Troubleshooting & Support
+43,What do I do for a terminated verification?,You can restart the re-verification by clicking re-verify from the applicant’s report page after you have confirmed that the name of the applicant is precisely what is in their government ID.,Pluto_FAQs2,Troubleshooting & Support
+44,What do I do for issues with liveness capturing?,Liveness issues could occur due to bad internet connectivity or poor lighting. Ensure to use a good internet connection and conduct the capturing in a place with good lighting. Also follow the instructions displayed on the screen to have a good liveness capture.,Pluto_FAQs2,Troubleshooting & Support
+45,How do I contact support?,You can reach Pluto support via email (support@verifyme.ng). Enterprise customers may also be assigned a dedicated account manager.,Pluto_FAQs2,Troubleshooting & Support
+46,Is Pluto legally compliant?,Yes. Pluto complies with relevant data protection and KYC/AML regulations in its operating regions.,Pluto_FAQs2,Compliance
+47,Does Pluto store verification history?,"Yes. For compliance purposes, verification history is stored securely and made available for audit or reporting when required.",Pluto_FAQs2,Compliance
+48,What is the Employee Reporting feature?,"Users can submit reports on applicants previously verified on Pluto. These reports, once published, are viewable by future verifiers of the same applicant.",Pluto_FAQs2,Employee Reporting
+49,What details are included in an Employee Report?,"Reports may include an additional identifier, review of employment engagement, adverse reports with supporting details, and evidence.",Pluto_FAQs2,Employee Reporting
+50,Can applicants dispute employee reports?,Yes. Applicants have 10 days to dispute any report before publication.,Pluto_FAQs2,Employee Reporting
+51,Does Pluto review submitted employee reports?,No. Pluto does not moderate or judge reports. They are displayed alongside applicant disputes for transparency.,Pluto_FAQs2,Employee Reporting
